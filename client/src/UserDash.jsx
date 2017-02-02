@@ -43,23 +43,25 @@ class UserDash extends React.Component {
 
   render() {
     return (
-    <div className="dash-body">
-      <div className="dash-container w-container">
-        <h1>Your Dashboard</h1>
-        <TrainerTable />
+      <div>
+        <div className="dash-body">
+          <div className="dash-container w-container">
+            <h1>Your Dashboard</h1>
+            <TrainerTable />
+          </div>
+        </div>
 
         <h2>Bookings</h2>
         <div className="dash-container w-col w-col-6" id="confirmed">
-          <h1 id="pendingTitle">Confirmed Bookings</h1>
-            <BookingTable booking={this.state.confirmed} RequestType={Confirmed} /> 
+          <center><h1 id="pendingTitle">Confirmed Bookings</h1></center>
+          <BookingTable booking={this.state.confirmed} RequestType={Confirmed} type={'user'} /> 
         </div>
 
         <div className="dash-container w-col-6" id="pending">
-          <h1 id="pendingTitle">Pending Bookings</h1>
-            <BookingTable booking={this.state.pending} RequestType={Pending} />   
+          <center><h1 id="pendingTitle">Pending Bookings</h1></center>
+          <BookingTable booking={this.state.pending} RequestType={Pending} type={'user'} />   
         </div> 
       </div>
-    </div>
     ); 
   }  
 }
