@@ -57,6 +57,7 @@ app.get('/api/userBookings', BookingController.displayUserBookings);
 app.delete('/api/bookings', BookingController.deleteBooking);
 app.get('/api/reviews', ReviewController.getAll);
 app.post('/api/reviews', ReviewController.postOne);
+app.put('/api/chat', BookingController.addMessage);
 // mongoose.connection('mongodb://localhost/')
 // const db = mongoose.connection;
 

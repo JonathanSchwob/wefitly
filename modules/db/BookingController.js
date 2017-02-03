@@ -78,5 +78,15 @@ module.exports = {
         res.end();
       }
     });
+  },
+
+  addMessage: function(req, res) {
+    BookingSchema.findByIdAndUpdate(req.body._id, {$push: {messages: message}}).then(function () {
+      if (err) {
+        console.error(err);
+      } else {
+        res.end('message sent');
+      }
+    });
   }
 };
