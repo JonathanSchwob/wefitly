@@ -66,7 +66,7 @@ class Signup extends React.Component {
               <input className="green-focus signup-alignment w-input" id="field-3" name="field-3" placeholder="Enter your first name" required ref='firstname' type="text" />
               <input className="green-focus signup-alignment w-input" id="field" name="field" placeholder="Enter your last name" required ref='lastname' type="text" />
               <select className="location-dropdown w-select" id="field-2" name="field-2" required ref="city">
-                <option value="">Select a location to view trainers</option>
+                <option value="">Select a location</option>
                 <option value="San Francisco">San Francisco</option>
                 <option value="San Mateo">San Mateo</option>
                 <option value="Pleasanton">Pleasanton</option>
