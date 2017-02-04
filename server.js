@@ -12,7 +12,7 @@ const TrainerController = require('./modules/db/trainerController.js');
 const BookingController = require('./modules/db/BookingController.js');
 const ReviewController = require('./modules/db/reviewController.js');
 
-mongoose.connect('mongodb://localhost:27017/wefitlytest');
+mongoose.connect(process.env.MONGODB_URI);
 
 const db = mongoose.connection;
 
