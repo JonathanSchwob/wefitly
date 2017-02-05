@@ -20,23 +20,23 @@ class trainerReview extends React.Component {
     };
   }
 
-  submitReview() {
-    // e.preventDefault();
-    $.ajax({
-      url: '/api/reviews',
-      type: 'POST',
-      ContentType: 'application/json',
-      data: {
-        review: this.refs.review.value,
-        trainer: this.props.email, //this is a property thats going to be passed down by the previous view
-      }
-    }).done(function(response) {
-      console.log('review submitted');
-      this.refs.review.value = '';
-    }).fail(function(response) {
-      console.log('review data transmission failure');
-    });    
-  }
+  // submitReview() {
+  //   // e.preventDefault();
+  //   $.ajax({
+  //     url: '/api/reviews',
+  //     type: 'POST',
+  //     ContentType: 'application/json',
+  //     data: {
+  //       review: this.refs.review.value,
+  //       trainer: this.props.email, //this is a property thats going to be passed down by the previous view
+  //     }
+  //   }).done(function(response) {
+  //     console.log('review submitted');
+  //     this.refs.review.value = '';
+  //   }).fail(function(response) {
+  //     console.log('review data transmission failure');
+  //   });    
+  // }
 
 
   getReviews() {

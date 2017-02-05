@@ -6,7 +6,9 @@ class Signup extends React.Component {
   constructor(props) {
     super(props);
     this.handleFormChange = this.handleFormChange.bind(this);
+    this.state = {
 
+    };
   }
 
   handleFormChange(e) {
