@@ -107,7 +107,6 @@ class TableRow extends React.Component {
   render() {
     return ( 
     <div>
-      <h1 onClick={this.getFiltered.bind(this)}>AH</h1>
       <li className="testimonial-row">
         <div className="row-container w-clearfix">
           <div className="row-column w-clearfix"><img className="test-image" src={this.props.pic} />
@@ -161,7 +160,8 @@ class TableRow extends React.Component {
           </div>
         </li>
         <form onSubmit={this.submitReview.bind(this)}>
-          <textarea required ref="review"></textarea>
+          <textarea required ref="review"></textarea> 
+          <br/>
           <button>Submit Review</button>  
         </form>       
       </div>
